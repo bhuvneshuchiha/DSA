@@ -1,5 +1,4 @@
 #include <climits>
-#include <iostream>
 #include <vector>
 using namespace std;
 
@@ -21,5 +20,6 @@ int maxiProfit(vector<int> &prices) {
     }
   }
   return maxProfit;
+};
 
-  int main() { return 0; }
+int main() { return 0; }
