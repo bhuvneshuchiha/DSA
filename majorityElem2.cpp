@@ -27,7 +27,6 @@ vector<int> majorityElement(vector<int> &nums) {
   }
   count1 = 0, count2 = 0;
   vector<int> ans;
-
   for (int i = 0; i < nums.size(); i++) {
     if (elem1 == nums[i]) {
       count1++;
