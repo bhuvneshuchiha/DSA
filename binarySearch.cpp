@@ -4,6 +4,7 @@ using namespace std;
 int main() {
 
   int arr[6] = {1, 2, 3, 9, 7, 5};
+
   int size = 6;
   int key = 7;
   int s = 0;
