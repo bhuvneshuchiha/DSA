@@ -13,13 +13,13 @@ int main(int argc, char *argv[]) {
 
   // NOTE: Creating jagged array:-
 
-  int **arr = new int *[row];
+  int **arr = new int* [row]; //This is the array pointing to array of pointers.
   for (int i = 0; i < row; i++) {
     cout << "Enter column number " << endl;
     int col;
     cin >> col;
     temp.push_back(col);
-    arr[i] = new int[col];
+    arr[i] = new int[col]; //Each element of the arr(array of pointers) is being assinged a new array in heap.
 
    //NOTE: Taking input into our array:-
     cout << "Start giving inputs " << endl;
