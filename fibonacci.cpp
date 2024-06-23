@@ -11,7 +11,7 @@ int fibonacci(int n) {
     return 0;
   }
 
-  int ans = fibonacci(n - 1) + (n - 2);
+  int ans = fibonacci(n - 1) + fibonacci(n - 2);
 
   return ans;
 }
