@@ -9,7 +9,7 @@ void printCount(int n) {
   }
 
   cout << n << " ";
-  return printCount(n - 1);
+  printCount(n - 1);
 }
 
 int main(int argc, char *argv[]) {
