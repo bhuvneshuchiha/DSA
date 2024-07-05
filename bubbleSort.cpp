@@ -5,7 +5,7 @@ using namespace std;
 void bubbleSort(int arr[], int size){
 
     //base case
-    if (size == 0) {
+    if (size == 0 || size == 1) {
         return;
     }
 
@@ -15,7 +15,7 @@ void bubbleSort(int arr[], int size){
         }
     }
 
-    bubbleSort(arr + 1, size - 1);
+    bubbleSort(arr, size - 1);
 }
 
 
