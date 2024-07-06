@@ -11,11 +11,9 @@ void solve(vector<int> nums, vector<vector <int>>& ans, vector<int> output,
     }
 
     //exclude
-
     solve(nums, ans, output, index + 1);
 
     //include
-
     int elem = nums[index];
     output.push_back(elem);
     solve(nums, ans, output, index + 1);
