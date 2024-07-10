@@ -13,6 +13,14 @@ public:
         this -> next = NULL;
         this -> prev = NULL;
     }
+
+    ~Node(){
+        int value = this -> data;
+        if (next != NULL) {
+            delete next;
+            next = NULL;
+        }
+    }
 };
 
 void print(Node* head){
@@ -98,6 +106,32 @@ void insertAtPosition(Node* &tail, Node* &head, int d, int position){
         return;
     }
 
+}
+
+void deleteNode(int position, Node* &head){
+
+    if (position == 1) {
+        Node* temp = head;
+        temp -> next -> prev = NULL;
+        head = temp -> next;
+        temp -> next = NULL;
+        delete temp;
+    }
+
+    else{
+        Node* curr = head;
+        Node* prev = NULL;
+        int count = 1;
+        while(count < position){
+            prev = curr;
+            curr = curr -> next;
+            count++;
+        }
+        curr -> prev = NULL;
+        prev -> next = curr -> next;
+        curr -> next = NULL;
+        delete curr;
+    }
 }
 
 int main(){
