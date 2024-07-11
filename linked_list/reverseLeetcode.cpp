@@ -17,6 +17,7 @@ public:
 
 void reverseList(Node* &head){
 
+    //Initialize the pointers-
     Node* curr = head;
     Node* prev = NULL;
     Node* forward = NULL;
