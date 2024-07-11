@@ -24,7 +24,7 @@ public:
 
 void insertAtHead(Node* &head, int d){
 
-    //HACK:if the list is empty
+    //NOTE:if the list is empty
     if (head == NULL) {
         Node* temp = new Node(d);
         head = temp;
@@ -79,7 +79,7 @@ void deleteAtPosition(Node* &tail, Node* &head, int position){
 
 void insertAtTail(Node* &tail, int d){
 
-    //HACK:if the list is empty
+    //NOTE:if the list is empty
     if (tail == NULL) {
         Node* temp = new Node(d);
         tail = temp;
